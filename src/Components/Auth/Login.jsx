@@ -145,11 +145,7 @@ function Login() {
           </div>
           <button type="submit" className="btn btns" disabled={!formik.isValid}>
             {loading ? (
-              <img
-                src={"https://loading.io/asset/650327"}
-                alt="load"
-                className="spinner"
-              />
+              <img src={"loading2.svg"} alt="load" className="spinner" />
             ) : (
               "Login"
             )}
