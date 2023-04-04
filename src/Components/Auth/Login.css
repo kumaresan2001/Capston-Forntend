@@ -13,7 +13,7 @@ input{
 }
 .btns{
     color: white;
-    background-color: green !important;
+    background-color: #186e03 !important;
     width:100% !important;
     border-radius: 25px !important;
     padding: 7px 0 !important;
@@ -57,4 +57,7 @@ border-radius: 10px;
 }
 .ttt{
     color: green;
+}
+.admin{
+    color: rgb(4, 16, 17);
 }

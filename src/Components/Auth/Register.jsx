@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import { env } from "../../config";
-
+import load from "../../asset/Reload-1s-200px.svg";
 function Register() {
   let navigate = useNavigate();
   let [loading, setloading] = useState(false);
@@ -174,11 +174,7 @@ function Register() {
           </div>
           <button type="submit" className="btns btn" disabled={!formik.isValid}>
             {loading ? (
-              <img
-                src={"https://loading.io/mod/spinner/spinner/thumb.png"}
-                alt="load"
-                className="spinner"
-              />
+              <img src={load} alt="load" className="spinner" />
             ) : (
               " SignUp "
             )}

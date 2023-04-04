@@ -6,7 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import { env } from "../../config";
-
+import load from "../../asset/Reload-1s-200px.svg";
 import UserContext from "../Context/usercContext";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
@@ -145,7 +145,7 @@ function Login() {
           </div>
           <button type="submit" className="btn btns" disabled={!formik.isValid}>
             {loading ? (
-              <img src={"loading2.svg"} alt="load" className="spinner" />
+              <img src={load} alt="load" className="spinner" />
             ) : (
               "Login"
             )}
@@ -159,6 +159,11 @@ function Login() {
               >
                 Sign up now
               </span>
+              <div className="admin">
+                <h3>Use Admin</h3>
+                <h5>email:kumaresancrseven@gmail.com</h5>
+                <h5>password:kumar@123</h5>
+              </div>
             </span>
           </div>
         </form>
